@@ -1,30 +1,33 @@
-package quanlisinhvien;
+package mode;
 
 import java.util.Objects;
 
-public class SinhVien implements Comparable<SinhVien> {
-    private String maSinhVien,hoTen;
+public class SinhVien {
+
+    private int maSinhVien;
+    static int dem=0;
+    private String hoTen;
     private int namSinh;
     private double diemTrungBinh;
 
     public SinhVien() {
     }
-    public SinhVien(String maSinhVien){
+    public SinhVien(int maSinhVien){
         this.maSinhVien = maSinhVien;
     }
 
-    public SinhVien(String maSinhVien, String hoTen, int namSinh, double diemTrungBinh) {
-        this.maSinhVien = maSinhVien;
+    public SinhVien(String hoTen, int namSinh, double diemTrungBinh) {
+        this.maSinhVien = dem++;
         this.hoTen = hoTen;
         this.namSinh = namSinh;
         this.diemTrungBinh = diemTrungBinh;
     }
 
-    public String getMaSinhVien() {
+    public int getMaSinhVien() {
         return maSinhVien;
     }
 
-    public void setMaSinhVien(String maSinhVien) {
+    public void setMaSinhVien(int maSinhVien) {
         this.maSinhVien = maSinhVien;
     }
 
@@ -62,7 +65,6 @@ public class SinhVien implements Comparable<SinhVien> {
                 '}';
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -76,10 +78,10 @@ public class SinhVien implements Comparable<SinhVien> {
         return Objects.hash(maSinhVien, hoTen, namSinh, diemTrungBinh);
     }
 
-    @Override
-    public int compareTo(SinhVien sinhVien) {
-        return maSinhVien.compareTo(sinhVien.maSinhVien);
-    }
+//    @Override
+//    public int compareTo(SinhVien sinhVien) {
+//        return maSinhVien.compareTo(sinhVien.maSinhVien);
+//    }
 
 }
 
