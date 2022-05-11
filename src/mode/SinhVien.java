@@ -23,6 +23,9 @@ public class SinhVien {
         this.diemTrungBinh = diemTrungBinh;
     }
 
+    public SinhVien(String s, String s1) {
+    }
+
     public int getMaSinhVien() {
         return maSinhVien;
     }

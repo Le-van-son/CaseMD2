@@ -45,11 +45,11 @@ public class QuanLySinhVien {
         int luaChon = 0;
         do {
             System.out.println("--------------------Menu-------------------------");
-            System.out.println("1.In tất cả sinh viên");
+            System.out.println(ANSI_BLUE+"1.In tất cả sinh viên");
             System.out.println("2.In sinh viên giỏi");
             System.out.println("3.In sinh viên khá");
             System.out.println("4.In sinh viên trung bình");
-            System.out.println("5.Quay lại menu");
+            System.out.println("5.Quay lại menu"+ANSI_RESET);
             do {
                 try {
                     luaChon = sc.nextInt();
