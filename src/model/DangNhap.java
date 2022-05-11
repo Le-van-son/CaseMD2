@@ -1,4 +1,4 @@
-package mode;
+package model;
 
 public class DangNhap {
     private String ten,matKhau;

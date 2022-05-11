@@ -1,10 +1,9 @@
 package quanlisinhvien;
 
 import filedocghi.FileDocGhiDangNhap;
-import mode.DangNhap;
+import model.DangNhap;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

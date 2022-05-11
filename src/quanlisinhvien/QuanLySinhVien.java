@@ -1,8 +1,8 @@
 package quanlisinhvien;
 
 import filedocghi.FileDocGhi;
-import mode.Menu;
-import mode.SinhVien;
+import model.Menu;
+import model.SinhVien;
 
 import java.io.FileNotFoundException;
 import java.util.*;

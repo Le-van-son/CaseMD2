@@ -1,10 +1,8 @@
 package filedocghi;
 
-import mode.DangNhap;
-import mode.SinhVien;
+import model.DangNhap;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

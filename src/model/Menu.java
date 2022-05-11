@@ -1,4 +1,4 @@
-package mode;
+package model;
 
 public class Menu {
     public static final String ANSI_RESET = "\u001B[0m";

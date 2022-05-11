@@ -1,6 +1,6 @@
 package filedocghi;
 
-import mode.SinhVien;
+import model.SinhVien;
 
 import java.io.*;
 import java.util.List;
