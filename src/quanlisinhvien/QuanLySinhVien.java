@@ -13,7 +13,7 @@ public class QuanLySinhVien {
     public List<SinhVien> sinhVienList = new ArrayList<>();
 
     public QuanLySinhVien() throws FileNotFoundException {
-        FileDocGhi.ReadFromFile(sinhVienList);
+        FileDocGhi.DocTuFile(sinhVienList);
     }
 
     public void themSinhVien(SinhVien sinhVien) {
@@ -39,7 +39,7 @@ public class QuanLySinhVien {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
-    public void hienThi() {
+    public void hienThiSinhVien() {
         Menu menu = new Menu();
         Scanner sc = new Scanner(System.in);
         int luaChon = 0;
@@ -102,7 +102,6 @@ public class QuanLySinhVien {
                     if (dem2 == 0) System.out.println("Không có Sinh viên khá nào ");
                     break;
                 case 5:
-                    Menu.menu();
                     break;
             }
         } while (luaChon != 5);
@@ -125,6 +124,7 @@ public class QuanLySinhVien {
             System.out.println("Không có sinh viên nào để xóa");
         } else sinhVienList.remove(sinhVien);
         return true;
+
     }
 
     public void timSinhVien(int ma) {
@@ -172,27 +172,7 @@ public class QuanLySinhVien {
 
     Scanner sc = new Scanner(System.in);
 
-    public void batNGoaiLeNhapLuaChon() {
-        int luaChon = 1;
-        do {
-            try {
-                luaChon = sc.nextInt();
-                sc.nextLine();
-                if (luaChon < 1 || luaChon > 15) {
-                    System.out.println("Xin hãy nhìn lại menu,mời nhập lại lựa chọn");
-                }
-            } catch (InputMismatchException e) {
-                System.out.println("Chỉ nhập số,mời nhập lại lựa chọn: ");
-                sc.nextLine();
-                luaChon = -1;
-            }
 
-        } while (luaChon < 1 || luaChon > 15);
-    }
-
-    public void nhapThongTinSinhVien() {
-
-    }
 
 
 }

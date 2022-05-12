@@ -22,17 +22,16 @@ public class Menu {
     public static void menu() {
         System.out.println(ANSI_BLUE+"--------------------Menu-------------------------");
         System.out.println("1.Thêm Sinh Viên");
-        System.out.println("2.Kiểm Tra Rỗng");
-        System.out.println("3.Lấy Số Lượng Sinh Viên");
-        System.out.println("4.Hiển thị các loại danh sách sinh viên");
-        System.out.println("5.Làm Rỗng Danh Sách");
-        System.out.println("6.Kiểm Tra Sinh Viên Có Tồn Tại:");
-        System.out.println("7.Xóa sinh viên:");
-        System.out.println("8.Tìm sinh viên theo mã sv:");
-        System.out.println("9.Đọc File:");
-        System.out.println("10.Sửa :");
-        System.out.println("11.Sắp xếp sinh viên theo điểm:");
-        System.out.println("12.Quay lại màn hình đăng nhập:");
+        System.out.println("2.Lấy Số Lượng Sinh Viên");
+        System.out.println("3.Hiển thị các loại danh sách sinh viên");
+        System.out.println("4.Làm Rỗng Danh Sách");
+        System.out.println("5.Kiểm Tra Sinh Viên Có Tồn Tại:");
+        System.out.println("6.Xóa sinh viên:");
+        System.out.println("7.Tìm sinh viên theo mã sv:");
+        System.out.println("8.Đọc File:");
+        System.out.println("9.Sửa :");
+        System.out.println("10.Sắp xếp sinh viên theo điểm:");
+        System.out.println("11.Quay lại màn hình đăng nhập:");
         System.out.println("Mời nhập lựa chọn:"+ANSI_RESET);
     }
 }

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
     public class FileDocGhiDangNhap{
-        public static void WriteToFileDangNhap(List<DangNhap> dangNhapList) throws FileNotFoundException {
+        public static void vietVaoFileDangNhap(List<DangNhap> dangNhapList) throws FileNotFoundException {
             File file3 = new File("E:\\HocCodegym\\CaseModlue2\\Ghifiledangnhap.csv");
             PrintWriter printWriter = new PrintWriter(file3);
             printWriter.print("name,pass\n");
@@ -18,7 +18,7 @@ import java.util.Scanner;
             printWriter.close();
         }
 
-        public static List<DangNhap> readFromFileDangNhap(List<DangNhap> dangNhapList) throws FileNotFoundException {
+        public static List<DangNhap> docTuFileDangNhap(List<DangNhap> dangNhapList) throws FileNotFoundException {
             File file4 = new File("E:\\HocCodegym\\CaseModlue2\\Ghifiledangnhap.csv");
             Scanner scanner = new Scanner(file4);
             scanner.nextLine();

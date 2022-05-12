@@ -15,16 +15,17 @@ public class QuanLiDangNhap<FileGhiDangNhap> {
         this.dangNhapList = dangNhapList;
     }
 
+
     public QuanLiDangNhap() throws FileNotFoundException {
-        FileDocGhiDangNhap.readFromFileDangNhap(dangNhapList);
+        FileDocGhiDangNhap.docTuFileDangNhap(dangNhapList);
     }
 
     public void themTaiKhoan(DangNhap dangNhap) throws FileNotFoundException{
         dangNhapList.add(dangNhap);
         System.out.println("Đăng kí thành công");
-        FileDocGhiDangNhap.WriteToFileDangNhap(dangNhapList);
+        FileDocGhiDangNhap.vietVaoFileDangNhap(dangNhapList);
     }
-    public int find(String ten,String matkhau) {
+    public int timTaiKhoan(String ten,String matkhau) {
         for (int i = 0; i < dangNhapList.size(); i++) {
             if (ten.equals(dangNhapList.get(i).getTen()) && (dangNhapList.get(i).getMatKhau().equals(matkhau))) {
                 return i;
@@ -32,7 +33,7 @@ public class QuanLiDangNhap<FileGhiDangNhap> {
         }
         return -1;
     }
-    public String display(String name,String pass){
+    public String hienThiTaiKhoan(String name,String pass){
         String str = "name = ";
         for (DangNhap user : dangNhapList) {
             if (name.equals(user.getTen())&&(user.getMatKhau().equals(pass)))
@@ -40,14 +41,14 @@ public class QuanLiDangNhap<FileGhiDangNhap> {
         }
         return str;
     }
-    public void displayInfor(String name,String pass){
+    public void hienThiThongTin(String name,String pass){
         for (DangNhap user : dangNhapList) {
             if (name.equals(user.getTen())&&(user.getMatKhau().equals(pass)))
                 System.out.println(user);;
         }
     }
-    public void edit(String ten,String matKhau, DangNhap dangNhap) {
-        int index = find(ten, matKhau);
+    public void sua(String ten,String matKhau, DangNhap dangNhap) {
+        int index = timTaiKhoan(ten, matKhau);
         dangNhapList.set(index, dangNhap);
     }
 

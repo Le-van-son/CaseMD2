@@ -19,7 +19,7 @@ public class FileDocGhi{
         bw.flush();
         bw.close();
     }
-    public static List<SinhVien> ReadFromFile(List<SinhVien> sinhVienList) throws FileNotFoundException {
+    public static List<SinhVien> DocTuFile(List<SinhVien> sinhVienList) throws FileNotFoundException {
         File file2 = new File("E:\\HocCodegym\\CaseModlue2\\Ghifile.csv");
         Scanner sc = new Scanner(file2);
         String line = null;
